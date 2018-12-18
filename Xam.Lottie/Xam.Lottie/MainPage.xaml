@@ -2,13 +2,35 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Xam.Lottie"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="Xam.Lottie.MainPage">
+    
+    <ScrollView>
+        <StackLayout>
+     
+        <Label Text ="Štastné a Veselé"
+               HorizontalOptions="Center"
+                Style="{DynamicResource TitleStyle}"/>
+            <forms:AnimationView 
+                         Animation="christmas_tree_with_gifts.json"
+                         Loop="True"
+                         AutoPlay="True"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+            <forms:AnimationView 
+                         Animation="deer.json"
+                         Loop="True"
+                         AutoPlay="True"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
 
+            <forms:AnimationView 
+                         Animation="happy_tree.json"
+                         Loop="True"
+                         AutoPlay="True"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
