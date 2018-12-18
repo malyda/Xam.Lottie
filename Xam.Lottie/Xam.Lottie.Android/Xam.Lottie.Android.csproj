@@ -65,11 +65,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\fa-solid-900.ttf" />
+    <AndroidAsset Include="Assets\fa-regular-400.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <AndroidAsset Include="Assets\christmas_tree_with_gifts.json" />
-    <AndroidAsset Include="Assets\deer.json" />
     <AndroidAsset Include="Assets\happy_tree.json" />
   </ItemGroup>
   <ItemGroup>

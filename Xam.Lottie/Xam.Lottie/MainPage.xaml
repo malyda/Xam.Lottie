@@ -4,27 +4,32 @@
              xmlns:local="clr-namespace:Xam.Lottie"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="Xam.Lottie.MainPage">
-    
-    <ScrollView>
+  
         <StackLayout>
-     
-        <Label Text ="Štastné a Veselé"
+            <Label Text ="Štastné a Veselé"
                HorizontalOptions="Center"
                 Style="{DynamicResource TitleStyle}"/>
+
+            <!-- FontAwesome -->
+            <Label Text="&#xf118; &#xf259;" 
+                   TextColor="Black" 
+                   FontSize="36"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String" 
+                                Android="fa-regular-400.ttf#Font Awesome 5 Free Regular" 
+                                iOS="Font Awesome 5 Free" />
+                </Label.FontFamily>
+            </Label>
+
+            <!-- Lottie -->
             <forms:AnimationView 
                          Animation="christmas_tree_with_gifts.json"
                          Loop="True"
                          AutoPlay="True"
                          VerticalOptions="FillAndExpand"
                          HorizontalOptions="FillAndExpand" />
-
-            <forms:AnimationView 
-                         Animation="deer.json"
-                         Loop="True"
-                         AutoPlay="True"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="FillAndExpand" />
-
             <forms:AnimationView 
                          Animation="happy_tree.json"
                          Loop="True"
@@ -32,5 +37,4 @@
                          VerticalOptions="FillAndExpand"
                          HorizontalOptions="FillAndExpand" />
         </StackLayout>
-    </ScrollView>
 </ContentPage>
