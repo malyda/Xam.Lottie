@@ -29,7 +29,9 @@
                          Loop="True"
                          AutoPlay="True"
                          VerticalOptions="FillAndExpand"
-                         HorizontalOptions="FillAndExpand" />
+                         HorizontalOptions="FillAndExpand"
+                         HeightRequest="300" 
+                         WidthRequest="300"/>
             <forms:AnimationView 
                          Animation="happy_tree.json"
                          Loop="True"
